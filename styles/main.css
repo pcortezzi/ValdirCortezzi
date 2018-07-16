@@ -1,0 +1,192 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size: 1em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+	background: #fcfcfc url("../newimages/background-image.jpeg") repeat fixed;
+}
+
+/* Hyperlink Styles: */
+
+a:link, a:visited {
+	color:#565656;
+	text-decoration:none;
+}
+
+a:hover, a:focus {
+	font-weight: 400;
+	color: #0196e3;
+}
+
+a img{
+	border: 2px solid black;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:4em;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family: Scriptina, Verdana, Helvetica, Arial, Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	border-top: 1px solid white;
+	padding-top: 40px;
+	border-bottom: 1px solid white;
+	padding-bottom: 40px;
+}
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	font-style: italic;
+	letter-spacing:0.01em;
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+}
+.go_up {
+	float: right; 
+	padding-right: 15px;  
+}
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+	text-align: justify;
+	padding-top: 1em;
+}
+.pbold{
+	float: left;
+	font-size:.8em;
+	font-weight: lighter;
+	letter-spacing:0.01em;
+	text-transform:lowercase;
+	border: medium inset;
+	border-radius: 5px;
+	padding: 0;
+}
+
+
+nav{
+	background: 50% 50% #f8f8f8;
+	padding:0 5px;
+	float: right;
+		border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#565656;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:#00001a;
+	margin:3em 0;
+	padding:20px;
+	text-shadow:0 2px 0 black;
+}
+
+figure{
+	float:right;
+	height: 300px;
+	margin-left:15px;
+	overflow:hidden;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:10px;
+	text-align:right;
+	font-size:0.825em;
+}
+
+
+footer a,footer a:visited{
+	color:white;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+}
